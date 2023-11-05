@@ -1,2 +1,2 @@
 # ChandlerSmith.github.io
-Personal Site
+Personal Site where I add my publications, interests, and background. 
