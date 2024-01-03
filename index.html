@@ -21,63 +21,38 @@
             overflow: hidden;
             padding: 50px 0;
         }
-        header {
+        header, footer {
             background: #fff;
             color: #333;
-            padding-top: 30px;
-            min-height: 70px;
+            padding: 10px 0;
             border-bottom: 2px solid #eee;
         }
-        header a {
+        header a, footer a {
             color: #333;
             text-decoration: none;
             font-size: 16px;
+            margin: 0 15px;
         }
-        header ul {
-            padding: 0;
+        header a:hover, footer a:hover {
+            color: #2980b9;
+        }
+        nav ul {
             list-style: none;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        header li {
-            padding: 0 20px;
+        nav li {
+            padding: 0 15px;
         }
-        header #branding {
-            float: none;
+        .branding {
             text-align: center;
+            margin-bottom: 40px;
         }
-        header #branding h1 {
+        .branding h1 {
+            font-size: 2.5rem;
             margin: 0;
-            font-size: 24px;
-        }
-        header .highlight, header .current a {
-            color: #2980b9;
-            font-weight: bold;
-        }
-        header a:hover {
-            color: #2980b9;
-        }
-        #about img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            display: block;
-            margin: 30px auto;
-        }
-        footer {
-            background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 30px;
-        }
-        footer p {
-            margin: 0;
-        }
-        footer a {
-            color: #fff;
-            padding: 0 10px;
         }
         .social-icons {
             text-align: center;
@@ -86,7 +61,7 @@
         .social-icons a {
             margin: 0 10px;
             color: #333;
-            font-size: 24px;
+            font-size: 1.5rem;
         }
         .social-icons a:hover {
             color: #2980b9;
@@ -96,26 +71,34 @@
             flex-wrap: wrap;
             justify-content: space-around;
             align-items: center;
+            padding: 40px 0;
         }
-        .profile-section div, .profile-section img {
-            flex-basis: 45%;
+        .profile-image {
+            flex-basis: 40%;
+            max-width: 40%;
+            margin: 20px;
         }
-        .profile-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 0;
+        .profile-image img {
+            width: 100%;
+            border-radius: 5px;
         }
         .profile-details {
-            text-align: left;
+            flex-basis: 50%;
+            max-width: 50%;
+            margin: 20px;
         }
         .profile-details h2 {
-            font-size: 28px;
+            font-size: 2rem;
+            color: #2980b9;
+        }
+        .profile-details p {
+            margin-bottom: 10px;
         }
         .interests, .education {
             margin-top: 20px;
         }
         .interests h3, .education h3 {
-            font-size: 22px;
+            font-size: 1.8rem;
             color: #2980b9;
         }
         .interests ul, .education ul {
@@ -124,24 +107,76 @@
         }
         .interests li, .education li {
             padding: 5px 0;
+            margin-left: 20px;
         }
         .interests li::before, .education li::before {
-            content: '• ';
+            content: '•';
             color: #2980b9;
-            font-size: 20px;
-            padding-right: 5px;
+            font-weight: bold;
+            display: inline-block;
+            width: 15px;
+        }
+        footer {
+            border-top: 2px solid #eee;
+            margin-top: 40px;
+            padding: 10px 0;
+        }
+        footer p {
+            text-align: center;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="branding">
-                <h1>Chandler Smith</h1>
+        <div class="branding">
+            <h1>Chandler Smith</h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="profile-section">
+            <div class="profile-image">
+                <img src="placeholder-profile.jpg" alt="Chandler Smith">
             </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="research.html">Research</a></li>
-                    <li><a href="contact.html">
+            <div class="profile-details">
+                <h2>About Me</h2>
+                <p>Placeholder text for about me section. This will describe my passion for technology and innovation. Feel free to explore my portfolio and reach out if you want to connect!</p>
+                <div class="interests">
+                    <h3>Interests</h3>
+                    <ul>
+                        <li>Interest Placeholder 1</li>
+                        <li>Interest Placeholder 2</li>
+                        <li>Interest Placeholder 3</li>
+                    </ul>
+                </div>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>Education Placeholder 1</li>
+                        <li>Education Placeholder 2</li>
+                        <li>Education Placeholder 3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="social-icons">
+            <a href="https://twitter.com/yourhandle" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:smith.18.chandler@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2023 Chandler Smith</p>
+    </footer>
+</body>
+</html>
