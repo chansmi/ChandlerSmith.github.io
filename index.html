@@ -6,12 +6,12 @@
     <title>Chandler Smith - Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #f4f4f4;
-            color: #333;
+            background: #f9f9f9;
+            color: #555;
         }
         .container {
             width: 80%;
@@ -19,13 +19,13 @@
             overflow: hidden;
         }
         header {
-            background: #50b3a2;
+            background: #333;
             color: white;
             padding-top: 30px;
             min-height: 70px;
-            border-bottom: #e8491d 3px solid;
+            border-bottom: #2980b9 3px solid;
         }
-        header a {
+        header a, footer a {
             color: #ffffff;
             text-decoration: none;
             text-transform: uppercase;
@@ -50,12 +50,28 @@
             margin-top: 10px;
         }
         header .highlight, header .current a {
-            color: #e8491d;
+            color: #2980b9;
             font-weight: bold;
         }
-        header a:hover {
-            color: #ffffff;
+        header a:hover, footer a:hover {
+            color: #dfe6e9;
             font-weight: bold;
+        }
+        #about img {
+            float: left;
+            margin-right: 20px;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
@@ -69,7 +85,7 @@
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="research.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -82,17 +98,18 @@
             <p>This is a placeholder for my personal brand and portfolio. Here you can find more about my work, my projects, and how to get in touch with me.</p>
         </section>
         <section id="about">
+            <img src="images/profile.jpg" alt="Chandler Smith">
             <h2>About Me</h2>
             <p>I'm Chandler Smith, a professional with a passion for technology and innovation. This site is a reflection of my work and interests. Feel free to explore my portfolio and reach out if you want to connect!</p>
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Interested in collaborating or want to say hi? You can reach me at <a href="mailto:your.email@example.com">your.email@example.com</a>.</p>
+            <p>Interested in collaborating or want to say hi? You can reach me at <a href="mailto:smith.18.chandler@gmail.com">smith.18.chandler@gmail.com</a>.</p>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2023 Chandler Smith</p>
+        <p>&copy; 2023 Chandler Smith | <a href="mailto:smith.18.chandler@gmail.com">smith.18.chandler@gmail.com</a></p>
     </footer>
 </body>
 </html>
