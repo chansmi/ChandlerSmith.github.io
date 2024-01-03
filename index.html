@@ -22,34 +22,20 @@
             overflow: hidden;
             padding: 50px 0;
         }
-        header, footer {
+        header {
             background: #fff;
             color: #333;
             padding: 10px 0;
-            border-bottom: 2px solid #eee;
+            text-align: center;
         }
-        header a, footer a {
+        header a {
             color: #333;
             text-decoration: none;
             font-size: 16px;
             margin: 0 15px;
         }
-        header a:hover, footer a:hover {
+        header a:hover {
             color: #2980b9;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        nav li {
-            padding: 0 15px;
-        }
-        .branding {
-            text-align: center;
-            margin-bottom: 40px;
         }
         .branding h1 {
             font-size: 2.5rem;
@@ -68,62 +54,38 @@
             color: #2980b9;
         }
         .profile-section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: center;
             padding: 40px 0;
         }
-        .profile-image {
-            flex-basis: 40%;
-            max-width: 40%;
-            margin: 20px;
-        }
         .profile-image img {
-            width: 100%;
-            border-radius: 5px;
-        }
-        .profile-details {
-            flex-basis: 50%;
-            max-width: 50%;
-            margin: 20px;
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: block;
+            margin: 20px auto;
         }
         .profile-details h2 {
             font-size: 2rem;
             color: #2980b9;
+            text-align: center;
         }
-        .profile-details p {
-            margin-bottom: 10px;
+        .profile-details p, .profile-details ul {
+            margin-left: 20px;
+            text-align: left;
         }
-        .interests, .education {
+        .subsection {
             margin-top: 20px;
         }
-        .interests h3, .education h3 {
-            font-size: 1.8rem;
-            color: #2980b9;
-        }
-        .interests ul, .education ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .interests li, .education li {
-            padding: 5px 0;
-            margin-left: 20px;
-        }
-        .interests li::before, .education li::before {
-            content: '•';
-            color: #2980b9;
-            font-weight: bold;
-            display: inline-block;
-            width: 15px;
-        }
         footer {
+            background: #333;
+            color: white;
+            text-align: center;
             border-top: 2px solid #eee;
-            margin-top: 40px;
             padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
         footer p {
-            text-align: center;
             margin: 0;
         }
     </style>
@@ -133,20 +95,12 @@
         <div class="branding">
             <h1>Chandler Smith</h1>
         </div>
-        <div class="social-icons" style="text-align: center; padding: 10px;">
+        <div class="social-icons">
             <a href="https://twitter.com/ChandlerDSmith" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/chandlerdsmith/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://github.com/chansmi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
             <a href="mailto:smith.18.chandler@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-        </div>        
-        <nav>
-            <ul>
-                <li class="current"><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
     <div class="container">
@@ -155,21 +109,16 @@
                 <img src="images/profile.jpg" alt="Chandler Smith">
             </div>
             <div class="profile-details">
-                <h2>About Me</h2>
-                <p>Placeholder text for about me section. This will describe my passion for technology and innovation. Feel free to explore my portfolio and reach out if you want to connect!</p>
-                <div class="interests">
-                    <h3>Interests</h3>
-                    <ul>
-                        <li>Interest Placeholder 1</li>
-                        <li>Interest Placeholder 2</li>
-                        <li>Interest Placeholder 3</li>
-                    </ul>
+                <div class="subsection">
+                    <h2>About Me</h2>
+                    <p>Placeholder text for the About Me section. This will describe my passion for technology and innovation. Feel free to explore my portfolio and reach out if you want to connect!</p>
                 </div>
-                <div class="education">
-                    <h3>Education</h3>
+                <div class="subsection">
+                    <h2>Research Interests</h2>
                     <ul>
-                        <li>Education Placeholder 1</li>
-                        <li>Education Placeholder 2</li>
+                        <li>Research Interest Placeholder 1</li>
+                        <li>Research Interest Placeholder 2</li>
+                        <li>Research Interest Placeholder 3</li>
                     </ul>
                 </div>
             </div>
@@ -177,12 +126,6 @@
     </div>
 
     <footer>
-        <div class="social-icons">
-            <a href="https://twitter.com/ChandlerDSmith" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/chandlerdsmith/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="mailto:smith.18.chandler@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="https://github.com/chansmi" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        </div>
         <p>&copy; 2024 Chandler Smith</p>
     </footer>
 </body>
