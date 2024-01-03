@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandler Smith - Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background: #f9f9f9;
-            color: #555;
+            background: #fff;
+            color: #333;
         }
         .container {
             width: 80%;
@@ -19,59 +20,85 @@
             overflow: hidden;
         }
         header {
-            background: #333;
-            color: white;
-            padding-top: 30px;
+            background: #fff;
+            color: #333;
+            padding-top: 10px;
             min-height: 70px;
-            border-bottom: #2980b9 3px solid;
+            border-bottom: 1px solid #dcdcdc;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
         }
-        header a, footer a {
-            color: #ffffff;
+        header a {
+            color: #333;
             text-decoration: none;
-            text-transform: uppercase;
             font-size: 16px;
         }
         header ul {
             padding: 0;
             list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 60px;
         }
         header li {
-            display: inline;
-            padding: 0 20px 0 20px;
+            padding: 0 20px;
         }
         header #branding {
             float: left;
+            display: flex;
+            align-items: center;
+            height: 60px;
         }
         header #branding h1 {
             margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
+            font-size: 24px;
         }
         header .highlight, header .current a {
             color: #2980b9;
             font-weight: bold;
         }
-        header a:hover, footer a:hover {
-            color: #dfe6e9;
-            font-weight: bold;
+        header a:hover {
+            color: #2980b9;
+        }
+        header .icon {
+            display: none;
         }
         #about img {
-            float: left;
-            margin-right: 20px;
             width: 150px;
             height: 150px;
             border-radius: 50%;
+            display: block;
+            margin: 20px auto;
         }
         footer {
             background: #333;
             color: white;
             text-align: center;
             padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
         footer p {
             margin: 0;
+        }
+        footer a {
+            color: #fff;
+            padding: 0 10px;
+        }
+        footer .social-icon {
+            display: inline;
+        }
+        @media (max-width: 768px) {
+            header ul {
+                justify-content: space-around;
+            }
+            header .icon {
+                display: initial;
+            }
         }
     </style>
 </head>
@@ -83,6 +110,7 @@
             </div>
             <nav>
                 <ul>
+                    <li class="icon"><a href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="research.html">Portfolio</a></li>
@@ -92,7 +120,7 @@
         </div>
     </header>
 
-    <div class="container">
+    <div class="container" style="padding-top: 80px;">
         <section id="showcase">
             <h1>Welcome to My Personal Site</h1>
             <p>This is a placeholder for my personal brand and portfolio. Here you can find more about my work, my projects, and how to get in touch with me.</p>
@@ -104,12 +132,4 @@
         </section>
         <section id="contact">
             <h2>Contact Me</h2>
-            <p>Interested in collaborating or want to say hi? You can reach me at <a href="mailto:smith.18.chandler@gmail.com">smith.18.chandler@gmail.com</a>.</p>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2023 Chandler Smith | <a href="mailto:smith.18.chandler@gmail.com">smith.18.chandler@gmail.com</a></p>
-    </footer>
-</body>
-</html>
+            <p>Interested in collaborating or want to say
