@@ -20,7 +20,7 @@
             width: 90%;
             margin: auto;
             overflow: hidden;
-            padding: 50px 0;
+            padding-top: 20px; /* Reduced space under header */
         }
         header, footer {
             background: #fff;
@@ -37,19 +37,9 @@
         header a:hover, footer a:hover {
             color: #2980b9;
         }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        nav li {
-            padding: 0 15px;
-        }
         .branding {
             text-align: center;
-            margin-bottom: 40px;
+            padding-bottom: 10px; /* Reduced space under the title */
         }
         .branding h1 {
             font-size: 2.5rem;
@@ -57,7 +47,7 @@
         }
         .social-icons {
             text-align: center;
-            padding: 20px;
+            padding: 10px; /* Adjust padding as needed */
         }
         .social-icons a {
             margin: 0 10px;
@@ -66,6 +56,13 @@
         }
         .social-icons a:hover {
             color: #2980b9;
+        }
+        .profile-image img {
+            width: 120px; /* Smaller image */
+            height: 120px; /* Keep aspect ratio */
+            border-radius: 50%; /* Circular image */
+            display: block;
+            margin: 20px auto;
         }
         .profile-section {
             display: flex;
