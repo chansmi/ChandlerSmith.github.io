@@ -8,27 +8,25 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
             margin: 0;
             padding: 0;
             background: #fff;
             color: #333;
+            font-size: 16px;
+            line-height: 1.6;
         }
         .container {
-            width: 80%;
+            width: 90%;
             margin: auto;
             overflow: hidden;
+            padding: 50px 0;
         }
         header {
             background: #fff;
             color: #333;
-            padding-top: 10px;
+            padding-top: 30px;
             min-height: 70px;
-            border-bottom: 1px solid #dcdcdc;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+            border-bottom: 2px solid #eee;
         }
         header a {
             color: #333;
@@ -39,18 +37,15 @@
             padding: 0;
             list-style: none;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
-            height: 60px;
         }
         header li {
             padding: 0 20px;
         }
         header #branding {
-            float: left;
-            display: flex;
-            align-items: center;
-            height: 60px;
+            float: none;
+            text-align: center;
         }
         header #branding h1 {
             margin: 0;
@@ -63,24 +58,19 @@
         header a:hover {
             color: #2980b9;
         }
-        header .icon {
-            display: none;
-        }
         #about img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             display: block;
-            margin: 20px auto;
+            margin: 30px auto;
         }
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            padding: 20px 0;
+            margin-top: 30px;
         }
         footer p {
             margin: 0;
@@ -89,16 +79,57 @@
             color: #fff;
             padding: 0 10px;
         }
-        footer .social-icon {
-            display: inline;
+        .social-icons {
+            text-align: center;
+            padding: 20px;
         }
-        @media (max-width: 768px) {
-            header ul {
-                justify-content: space-around;
-            }
-            header .icon {
-                display: initial;
-            }
+        .social-icons a {
+            margin: 0 10px;
+            color: #333;
+            font-size: 24px;
+        }
+        .social-icons a:hover {
+            color: #2980b9;
+        }
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .profile-section div, .profile-section img {
+            flex-basis: 45%;
+        }
+        .profile-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0;
+        }
+        .profile-details {
+            text-align: left;
+        }
+        .profile-details h2 {
+            font-size: 28px;
+        }
+        .interests, .education {
+            margin-top: 20px;
+        }
+        .interests h3, .education h3 {
+            font-size: 22px;
+            color: #2980b9;
+        }
+        .interests ul, .education ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .interests li, .education li {
+            padding: 5px 0;
+        }
+        .interests li::before, .education li::before {
+            content: '• ';
+            color: #2980b9;
+            font-size: 20px;
+            padding-right: 5px;
         }
     </style>
 </head>
@@ -110,26 +141,7 @@
             </div>
             <nav>
                 <ul>
-                    <li class="icon"><a href="javascript:void(0);" onclick="myFunction()"><i class="fa fa-bars"></i></a></li>
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="research.html">Portfolio</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <div class="container" style="padding-top: 80px;">
-        <section id="showcase">
-            <h1>Welcome to My Personal Site</h1>
-            <p>This is a placeholder for my personal brand and portfolio. Here you can find more about my work, my projects, and how to get in touch with me.</p>
-        </section>
-        <section id="about">
-            <img src="images/profile.jpg" alt="Chandler Smith">
-            <h2>About Me</h2>
-            <p>I'm Chandler Smith, a professional with a passion for technology and innovation. This site is a reflection of my work and interests. Feel free to explore my portfolio and reach out if you want to connect!</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Interested in collaborating or want to say
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="contact.html">
