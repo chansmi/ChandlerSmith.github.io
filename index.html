@@ -56,21 +56,28 @@
         .profile-section {
             padding: 40px 0;
         }
-        .profile-image img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto;
+        .profile-section {
+            display: flex;
+            align-items: flex-start;
+            padding: 20px 0;
         }
-        .profile-details h2 {
-            font-size: 2rem;
-            color: #2980b9;
+        .left-column {
+            flex-basis: 30%; /* Adjust as needed */
             text-align: center;
         }
-        .profile-details p, .profile-details ul {
-            margin-left: 20px;
-            text-align: left;
+        .right-column {
+            flex-basis: 70%; /* Adjust as needed */
+            padding-left: 20px;
+        }
+        .profile-image img {
+            max-width: 100%; /* Ensures the image is not warped */
+            height: auto; /* Maintains aspect ratio */
+            border-radius: 50%;
+        }
+        .subsection h2 {
+            font-size: 2rem;
+            color: #2980b9;
+            margin-top: 20px;
         }
         .subsection {
             margin-top: 20px;
@@ -88,6 +95,7 @@
         footer p {
             margin: 0;
         }
+        
     </style>
 </head>
 <body>
@@ -105,20 +113,24 @@
 
     <div class="container">
         <section class="profile-section">
-            <div class="profile-image">
-                <img src="images/profile.jpg" alt="Chandler Smith">
+            <div class="left-column">
+                <div class="profile-image">
+                    <img src="images/profile.jpg" alt="Chandler Smith">
+                </div>
+                <h2>Chandler Smith</h2>
             </div>
-            <div class="profile-details">
+            <div class="right-column">
                 <div class="subsection">
                     <h2>About Me</h2>
-                    <p>  My name is Chandler, and I am currently a MATS scholar collaborating with Jesse Clifton, researching multi-agent systems. I also am a MARS participant, where I am part of a team lead by Rhys Ward, looking into model deception and intention.
-                        In addition to AI Safety research, I work as a Technical Architect Fellow at IQT where I help support the national security and intelligence community. Previous, I worked as an engineer for Dimagi on global health and COVID response projects. 
-                        On a personal note, I am based out of Washington DC where I live with my Fiancé, cat, and dog. I enjoy running, going out to eat, and spending time with friends.
-                    </p>
+                    <p>My name is Chandler, and I am currently a MATS scholar collaborating with Jesse Clifton, researching multi-agent systems. I also am a MARS participant, where I am part of a team lead by Rhys Ward, looking into model deception and intention.
+                        In addition to AI Safety research, I work as a Technical Architect Fellow at IQT where I help support the national security and intelligence community. Previously, I worked as an engineer for Dimagi on global health and COVID response projects. 
+                        On a personal note, I am based out of Washington DC where I live with my Fiancé, cat, and dog. I enjoy running, going out to eat, and spending time with friends.</p>
                 </div>
                 <div class="subsection">
                     <h2>Research Interests</h2>
-                    <p>I am particularly interested by both the risks posed by multi-agent solutions and the potial use of agents for oversight. Promising research areas include Scalable Oversight, Cooperative AI, and assessing individual model traits such as deception and escalation.
+                    <ul>
+                    <p>I am particularly interested by both the risks posed by multi-agent solutions and the potial use of agents for oversight. Promising research areas include Scalable Oversight, Cooperative AI, and assessing individual model traits such as deception and escalation.</p>
+                    </ul>
                 </div>
             </div>
         </section>
