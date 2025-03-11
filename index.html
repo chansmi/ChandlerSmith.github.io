@@ -44,14 +44,17 @@
         }
         .research-item {
             display: flex;
-            align-items: flex-start;
+            align-items: center;
             margin-bottom: 30px;
             border-bottom: 1px solid #e1e4e8;
             padding-bottom: 30px;
         }
         .research-image {
-            width: 300px; /* Increased from 200px */
+            width: 350px; /* Increased from 300px */
             margin-right: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .research-content {
             flex: 1;
@@ -77,9 +80,10 @@
     </header>
     <div class="main-content">
         <div class="bio">
-            <p>My name is <strong>Chandler Smith</strong>, and I am a Research Engineer at the <a href="https://www.cooperativeai.com/">Cooperative AI Foundation</a> where I conduct technical research on multi-agent systems. I am delighted to have been selected as a <a href="https://www.cooperativeai.com/post/announcing-the-2025-cooperative-ai-phd-scholars">2025 Cooperative AI PhD Fellow</a>. I am also a <a href="https://foresight.org/technologies/computation-intelligent-cooperation/">Foresight AI Safety Grant Recipient</a>, working on multi-agent security, steganography, and AI control, including our recent piece, "<a href="https://www.lesswrong.com/posts/smMdYezaC8vuiLjCf/secret-collusion-will-we-know-when-to-unplug-ai">Secret Collusion: Will We Know When to Unplug AI?</a>". Additionally, I consult with <a href="https://www.iqt.org/">IQT</a>'s applied research and technology architect teams on AI, multi-agent systems, and AI infrastructure. Previously, I was a <a href="https://www.matsprogram.org/">MATS</a> scholar collaborating with <a href="https://www.linkedin.com/in/jesse-clifton-45652758/">Jesse Clifton</a> on multi-agent systems research. In the past, I worked as an engineer for <a href="https://www.dimagi.com/">Dimagi</a> on global health and COVID response projects.</p>
+            <p>My name is Chandler Smith, and I am a Research Engineer at the <a href="https://www.cooperativeai.com/">Cooperative AI Foundation</a> where I conduct technical research on multi-agent systems. I am delighted to have been selected as a <a href="https://www.cooperativeai.com/post/announcing-the-2025-cooperative-ai-phd-scholars">2025 Cooperative AI PhD Fellow</a>. I am also a <a href="https://foresight.org/technologies/computation-intelligent-cooperation/">Foresight AI Safety Grant Recipient</a>, working on multi-agent security, steganography, and AI control, including our recent piece, "<a href="https://www.lesswrong.com/posts/smMdYezaC8vuiLjCf/secret-collusion-will-we-know-when-to-unplug-ai">Secret Collusion: Will We Know When to Unplug AI?</a>". Additionally, I consult with <a href="https://www.iqt.org/">IQT</a>'s applied research and technology architect teams on AI, multi-agent systems, and AI infrastructure. Previously, I was a <a href="https://www.matsprogram.org/">MATS</a> scholar collaborating with <a href="https://www.linkedin.com/in/jesse-clifton-45652758/">Jesse Clifton</a> on multi-agent systems research. In the past, I worked as an engineer for <a href="https://www.dimagi.com/">Dimagi</a> on global health and COVID response projects.</p>
             <p>As AI systems become increasingly interconnected and autonomous, they introduce unprecedented risks that extend beyond the safety challenges of individual systems. My research focuses on understanding, measuring, and mitigating these risks via benchmarking, oversight, and security in both LM and MARL environments. </p>
-            <p>You can find me on <a href="https://twitter.com/ChandlerDSmith">Twitter</a>, <a href="https://www.linkedin.com/in/chandlerdsmith/">LinkedIn</a>, <a href="https://github.com/chansmi">GitHub</a>, and <a href="mailto:smith.18.chandler@gmail.com">Email</a>.</p>
+            <p>I recently presented "<a href="https://www.iaseai.org/conference/program/better-benchmarks-a-roadmap-for-high-stakes-evaluation-in-the-age-of-agentic-ai">Better Benchmarks: A Roadmap for High-Stakes Evaluation in the Age of Agentic AI</a>" at the IASEAI '25 Safe & Ethical AI Conference. You can watch the presentation on the <a href="https://oecdtv.webtv-solution.com/2e0655fe551f8acbae1b0047e936d9ef/or/video/iaseai_25_safe_ethical_ai_conference_plenary_.html">OECD channel</a> (at 02:53:00).</p>
+            <p>You can find me on <a href="https://twitter.com/ChandlerDSmith">Twitter</a>, <a href="https://www.linkedin.com/in/chandlerdsmith/">LinkedIn</a>, <a href="https://github.com/chansmi">GitHub</a>, <a href="https://scholar.google.com/citations?user=MW32guUAAAAJ&hl=en">Google Scholar</a>, and <a href="mailto:smith.18.chandler@gmail.com">Email</a>.</p>
         </div>
         <div class="photo">
             <img src="images/profile_2.jpeg" alt="Chandler Smith">
@@ -98,21 +102,30 @@
             </div>
         </div>
         <div class="research-item">
+            <img src="images/research_9.png" alt="MALT: Improving Reasoning with Multi-Agent LLM Training" class="research-image">
+            <div class="research-content">
+                <h3><a href="https://arxiv.org/abs/2412.01928">MALT: Improving Reasoning with Multi-Agent LLM Training</a></h3>
+                <p><strong>Authors:</strong> Sumeet Ramesh Motwani, <strong>Chandler Smith</strong>, Rocktim Jyoti Das, Rafael Rafailov, Ivan Laptev, Philip H. S. Torr, Fabio Pizzati, Ronald Clark, Christian Schroeder de Witt<br>
+                <strong>Conference:</strong> Preprint - AAMAS 2025 Submission</p>
+                <p>[Preprint - Under Review] Large Language Models (LLMs) often produce answers with a single chain-of-thought, which restricts their ability to explore reasoning paths or self-correct flawed outputs in complex tasks. In this paper, we introduce MALT (Multi-Agent LLM Training), a novel post-training strategy that divides the reasoning process into generation, verification, and refinement steps using a sequential pipeline of heterogeneous agents. During data generation, each agent is repeatedly sampled to form a multi-agent search tree, where final outputs are graded against ground-truth data. We then apply value iteration to propagate reward signals back to each role-conditioned model, automatically producing multi-agent post-training data without human or teacher-model supervision. Our off-policy approach allows each agent to specialize by learning from correct and incorrect trajectories, ultimately improving the end-to-end reasoning chain. On MATH, GSM8K, and CSQA, MALT surpasses the same baseline LLM with a relative improvement of 15.66%, 7.42%, and 9.40% respectively, making it an important advance towards multi-agent cooperative training.</p>
+            </div>
+        </div>
+        <div class="research-item">
+            <img src="images/research_4.png" alt="Multi-agent Risk from Advanced AI Report" class="research-image">
+            <div class="research-content">
+                <h3><a href="https://arxiv.org/abs/2502.14143">Multi-Agent Risks from Advanced AI</a></h3>
+                <p><strong>Authors:</strong> Lewis Hammond, Alan Chan, Jesse Clifton, Jason Hoelscher-Obermaier, Akbir Khan, Euan McLean, <strong>Chandler Smith</strong>, Wolfram Barfuss, Jakob Foerster, Tomáš Gavenčiak, The Anh Han, Edward Hughes, Vojtěch Kovařík, Jan Kulveit, Joel Z. Leibo, Caspar Oesterheld, Christian Schroeder de Witt, Nisarg Shah, Michael Wellman, Paolo Bova, Theodor Cimpeanu, Carson Ezell, Quentin Feuillade-Montixi, Matija Franklin, Esben Kran, Igor Krawczuk, Max Lamparth, Niklas Lauffer, Alexander Meinke, Sumeet Motwani, Anka Reuel, Vincent Conitzer, Michael Dennis, Iason Gabriel, Adam Gleave, Gillian Hadfield, Nika Haghtalab, Atoosa Kasirzadeh, Sébastien Krier, Kate Larson, Joel Lehman, David C. Parkes, Georgios Piliouras, Iyad Rahwan<br>
+                <strong>Publication:</strong> Cooperative AI Foundation, Technical Report #1</p>
+                <p>The rapid development of advanced AI agents and the imminent deployment of many instances of these agents will give rise to multi-agent systems of unprecedented complexity. These systems pose novel and under-explored risks. In this report, we provide a structured taxonomy of these risks by identifying three key failure modes (miscoordination, conflict, and collusion) based on agents' incentives, as well as seven key risk factors (information asymmetries, network effects, selection pressures, destabilising dynamics, commitment problems, emergent agency, and multi-agent security) that can underpin them. We highlight several important instances of each risk, as well as promising directions to help mitigate them. By anchoring our analysis in a range of real-world examples and experimental evidence, we illustrate the distinct challenges posed by multi-agent systems and their implications for the safety, governance, and ethics of advanced AI.</p>
+            </div>
+        </div>
+        <div class="research-item">
             <img src="images/research_6.png" alt="BetterBench" class="research-image">
             <div class="research-content">
                 <h3><a href="https://betterbench.stanford.edu/">BetterBench: Assessing AI Benchmarks, Uncovering Issues, and Establishing Best Practices</a></h3>
                 <p><strong>Authors:</strong> Anka Reuel, Amelia Hardy, <strong>Chandler Smith</strong>, Max Lamparth, Mykel J. Kochenderfer</p>
                 <strong>Conference:</strong> NeurIPS 2024 Track Datasets and Benchmarks <strong>Spotlight</strong>
                 <p>AI models are increasingly prevalent in high-stakes environments, necessitating thorough assessment of their capabilities and risks. Benchmarks are popular for measuring these attributes and for comparing model performance, tracking progress, and identifying weaknesses in foundation and non-foundation models.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_9.png" alt="MALT: Improving Reasoning with Multi-Agent LLM Training" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://arxiv.org/pdf/2412.01928"> MALT: Learning to Reason with Multi-Agent LLM Systems</a></h3>
-                <p><strong>Authors:</strong> Sumeet Ramesh Motwani, <strong>Chandler Smith</strong>, Rocktim Jyoti Das, Markian Rybchuk, Ronald Clark, Philip Torr, Fabio Pizzati, Ivan Laptev, Christian Schroeder de Witt<br>
-                <strong>Conference:</strong> Preprint - AAMAS 2025 Submission</p>
-                <p>[Preprint - Under Review] Enabling effective collaboration among LLMs is a crucial step towards developing autonomous systems capable of solving complex problems. While LLMs are typically used as zero-shot generators, where humans critique and refine their outputs, the potential for models to work together is largely unexplored. Despite the promising results seen in multi-agent debate settings, little progress has been made in training models specifically to collaborate on tasks in real-time. In this paper, we investigate how this process could be entirely automated via multi-agent inference and training. We propose a decentralized system of LLMs assigned specific roles and structured around a central framework consisting of a generator, verifier, and refinement model operating sequentially. We first produce multiple interaction trajectories of the base model on math problems and use these generations as synthetic data for preference optimization. We then fine-tune individual models to become specialized in their roles by applying variants of Supervised Fine-tuning (SFT) and the Direct Preference Optimization (DPO) algorithm. We evaluate our approach on the GSM8k math problem-solving dataset, where both our multi-agent inference and trained multi-agent systems using Llama 3.1 8B achieve relative improvements of 4.8% and 11.2%, respectively, over the baseline performance. This demonstrates significant advances of our approach in the mathematical reasoning and cooperative capabilities of Llama 3.1 8B, enabling it to perform on par with the 8.6x larger state-of-the-art Llama 70B models. More generally, our work paves a way for multi-agent LLM training and gives promise to improve reasoning capabilities across a range of challenging tasks using synthetically generated data.</p>
             </div>
         </div>
         <div class="research-item">
@@ -131,15 +144,6 @@
                 <p><strong>Authors:</strong> Francis Rhys Ward, Zejia Yang, Alex Jackson, Randy Brown, <strong>Chandler Smith</strong>, Grace Beaney Colverd, Louis Alexander Thomson, Raymond Douglas, Patrik Bartak, Andrew Rowan<br>
                 <strong>Conference:</strong> Empirical Methods in Natural Language Processing (EMNLP) findings, 2024</p>
                 <p>Language models (LMs) can exhibit human-like behaviour, but it is unclear how to describe this behaviour without undue anthropomorphism. We formalise a behaviourist view of LM character traits: qualities such as truthfulness, sycophancy, and coherent beliefs and intentions, which may manifest as consistent patterns of behaviour.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_4.png" alt=" Multi-agent Risk from Advanced AI Report" class="research-image">
-            <div class="research-content">
-                <h3><a href="">[Forthcoming] Multi-agent Risk from Advanced AI Report</a></h3>
-                <p><strong>Authors:</strong> Lewis Hammond, <strong>Chandler Smith</strong>, Jesse Clifton, et al.<br>
-                <strong>Expected Publication Date:</strong> November 2024</p>
-                <p>In this report we take a first step in this direction by providing a taxonomy of risks that emerge, are much more challenging, or are qualitatively different in the multi-agent setting. We begin by identifying different failure modes in multi-agent systems based on the nature of the agents' goals and the intended behaviour of the system.</p>
             </div>
         </div>
         <div class="research-item">
