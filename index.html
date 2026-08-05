@@ -4,193 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chandler Smith</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            font-size: 14px;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        header {
-            margin-bottom: 40px;
-        }
-        h1 {
-            font-size: 24px;
-            font-weight: normal;
-        }
-        a {
-            color: #0366d6;
-            text-decoration: none;
-        }
-        .main-content {
-            display: flex;
-            gap: 40px;
-        }
-        .bio {
-            flex: 2;
-        }
-        .photo {
-            flex: 1;
-        }
-        .photo img {
-            width: 100%;
-            border-radius: 50%;
-        }
-        .research {
-            margin-top: 40px;
-        }
-        .research-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-            border-bottom: 1px solid #e1e4e8;
-            padding-bottom: 30px;
-        }
-        .research-image {
-            width: 350px; /* Increased from 300px */
-            margin-right: 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .research-content {
-            flex: 1;
-        }
-        h3 {
-            margin-top: 0;
-            color: #0366d6;
-        }
-        .arrow {
-            color: #0366d6;
-        }
-        .collapsible-content {
-            margin-top: 10px;
-        }
-        .ongoing-projects {
-            margin-top: 40px;
-        }
-    </style>
+    <meta name="description" content="Chandler Smith is a DPhil student at the University of Oxford and a student researcher at Google DeepMind, working on multi-agent security, cooperative AI, and the evaluation of agentic systems.">
+    <link rel="canonical" href="https://chandlersmith.me/">
+    <meta property="og:title" content="Chandler Smith">
+    <meta property="og:description" content="DPhil student at the University of Oxford and student researcher at Google DeepMind, working on multi-agent security, cooperative AI, and the evaluation of agentic systems.">
+    <meta property="og:url" content="https://chandlersmith.me/">
+    <meta property="og:image" content="https://chandlersmith.me/images/portrait.jpg">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1><strong>Chandler Smith</strong></h1>
-    </header>
-    <div class="main-content">
-        <div class="bio">
-            <p>My name is Chandler Smith, and I am a DPhil student at the University of Oxford in the <a href="https://www.robots.ox.ac.uk/~tvg/">Torr Vision Group</a>. I am delighted to have been selected as a <a href="https://www.cooperativeai.com/post/announcing-the-2025-cooperative-ai-phd-scholars">2025 Cooperative AI PhD Fellow</a>. I am also a Research Engineer at the <a href="https://www.cooperativeai.com/">Cooperative AI Foundation</a> where I conduct technical research on multi-agent systems. I am a <a href="https://foresight.org/technologies/computation-intelligent-cooperation/">Foresight AI Safety Grant Recipient</a>, working on multi-agent security, steganography, and AI control, including our recent piece, "<a href="https://www.lesswrong.com/posts/smMdYezaC8vuiLjCf/secret-collusion-will-we-know-when-to-unplug-ai">Secret Collusion: Will We Know When to Unplug AI?</a>". Previously, I worked at <a href="https://www.iqt.org/">IQT</a> as a consultant with their applied research and technology architect teams on AI, multi-agent systems, and AI infrastructure. I was also a <a href="https://www.matsprogram.org/">MATS</a> scholar collaborating with <a href="https://www.linkedin.com/in/jesse-clifton-45652758/">Jesse Clifton</a> on multi-agent systems research. In the past, I worked as an engineer for <a href="https://www.dimagi.com/">Dimagi</a> on global health and COVID response projects.</p>
-            <p>As AI systems become increasingly interconnected and autonomous, they introduce unprecedented risks that extend beyond the safety challenges of individual systems. My research focuses on understanding, measuring, and mitigating these risks via benchmarking, oversight, and security in both LM and MARL environments. </p>
-            <p>I recently presented "<a href="https://www.iaseai.org/conference/program/better-benchmarks-a-roadmap-for-high-stakes-evaluation-in-the-age-of-agentic-ai">Better Benchmarks: A Roadmap for High-Stakes Evaluation in the Age of Agentic AI</a>" at the IASEAI '25 Safe & Ethical AI Conference. You can watch the presentation on the <a href="https://oecdtv.webtv-solution.com/2e0655fe551f8acbae1b0047e936d9ef/or/video/iaseai_25_safe_ethical_ai_conference_plenary_.html">OECD channel</a> (at 02:53:00).</p>
-            <p>You can find me on <a href="https://twitter.com/ChandlerDSmith">Twitter</a>, <a href="https://www.linkedin.com/in/chandlerdsmith/">LinkedIn</a>, <a href="https://github.com/chansmi">GitHub</a>, <a href="https://scholar.google.com/citations?user=MW32guUAAAAJ&hl=en">Google Scholar</a>, and <a href="mailto:smith.18.chandler@gmail.com">Email</a>.</p>
-        </div>
-        <div class="photo">
-            <img src="images/profile_2.jpeg" alt="Chandler Smith">
-        </div>
-    </div>
-    <div class="research">
-        <h2>Research</h2>
-        <div class="research-item">
-            <img src="images/contest_overview_v7.jpg" alt="Evaluating Generalization Capabilities of LLM-Based Agents" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://openreview.net/pdf?id=yG4Fj0voJZ">Evaluating Generalization Capabilities of LLM-Based Agents in Mixed-Motive Scenarios Using Concordia</a></h3>
-                <p><strong>Authors:</strong> <strong>Chandler Smith</strong>, Marwa Abdulhai, Manfred Díaz, Marko Tesic, Rakshit Trivedi, Sasha Vezhnevets, Lewis Hammond, Jesse Clifton, Minsuk Chang, Edgar Duenez-Guzman, John Agapiou, Jayd Matyas, Danny Karmon, and 60+ additional authors<br>
-                <strong>Conference:</strong> NeurIPS 2025</p>
-                <p>This research introduces a method for evaluating how LLM-based agents cooperate in zero-shot, mixed-motive environments using Concordia. The work assesses agents' capacity to identify and exploit opportunities for mutual gain across diverse partners and contexts. Findings from the NeurIPS 2024 Concordia Contest demonstrate significant gaps between current agent capabilities and the robust generalization required for reliable cooperation, especially in scenarios requiring persuasion and norm enforcement.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_4.png" alt="Multi-agent Risk from Advanced AI Report" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://arxiv.org/abs/2502.14143">Multi-Agent Risks from Advanced AI</a></h3>
-                <p><strong>Authors:</strong> Lewis Hammond, Alan Chan, Jesse Clifton, Jason Hoelscher-Obermaier, Akbir Khan, Euan McLean, <strong>Chandler Smith</strong>, Wolfram Barfuss, Jakob Foerster, Tomáš Gavenčiak, The Anh Han, Edward Hughes, Vojtěch Kovařík, Jan Kulveit, Joel Z. Leibo, Caspar Oesterheld, Christian Schroeder de Witt, Nisarg Shah, Michael Wellman, Paolo Bova, Theodor Cimpeanu, Carson Ezell, Quentin Feuillade-Montixi, Matija Franklin, Esben Kran, Igor Krawczuk, Max Lamparth, Niklas Lauffer, Alexander Meinke, Sumeet Motwani, Anka Reuel, Vincent Conitzer, Michael Dennis, Iason Gabriel, Adam Gleave, Gillian Hadfield, Nika Haghtalab, Atoosa Kasirzadeh, Sébastien Krier, Kate Larson, Joel Lehman, David C. Parkes, Georgios Piliouras, Iyad Rahwan<br>
-                <strong>Publication:</strong> Cooperative AI Foundation, Technical Report #1</p>
-                <p>The rapid development of advanced AI agents and the imminent deployment of many instances of these agents will give rise to multi-agent systems of unprecedented complexity. These systems pose novel and under-explored risks. In this report, we provide a structured taxonomy of these risks by identifying three key failure modes (miscoordination, conflict, and collusion) based on agents' incentives, as well as seven key risk factors (information asymmetries, network effects, selection pressures, destabilising dynamics, commitment problems, emergent agency, and multi-agent security) that can underpin them. We highlight several important instances of each risk, as well as promising directions to help mitigate them. By anchoring our analysis in a range of real-world examples and experimental evidence, we illustrate the distinct challenges posed by multi-agent systems and their implications for the safety, governance, and ethics of advanced AI.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_9.png" alt="MALT: Improving Reasoning with Multi-Agent LLM Training" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://arxiv.org/abs/2412.01928">MALT: Improving Reasoning with Multi-Agent LLM Training</a></h3>
-                <p><strong>Authors:</strong> Sumeet Ramesh Motwani, <strong>Chandler Smith</strong>, Rocktim Jyoti Das, Rafael Rafailov, Ivan Laptev, Philip H. S. Torr, Fabio Pizzati, Ronald Clark, Christian Schroeder de Witt<br>
-                <strong>Conference:</strong> Preprint - AAMAS 2025 Submission</p>
-                <p>[Preprint - Under Review] Large Language Models (LLMs) often produce answers with a single chain-of-thought, which restricts their ability to explore reasoning paths or self-correct flawed outputs in complex tasks. In this paper, we introduce MALT (Multi-Agent LLM Training), a novel post-training strategy that divides the reasoning process into generation, verification, and refinement steps using a sequential pipeline of heterogeneous agents. During data generation, each agent is repeatedly sampled to form a multi-agent search tree, where final outputs are graded against ground-truth data. We then apply value iteration to propagate reward signals back to each role-conditioned model, automatically producing multi-agent post-training data without human or teacher-model supervision. Our off-policy approach allows each agent to specialize by learning from correct and incorrect trajectories, ultimately improving the end-to-end reasoning chain. On MATH, GSM8K, and CSQA, MALT surpasses the same baseline LLM with a relative improvement of 15.66%, 7.42%, and 9.40% respectively, making it an important advance towards multi-agent cooperative training.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_1.png" alt="The Concordia Contest" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://drive.google.com/file/d/1G8WWPomgJ0Mdhg2Dw8ZJxLowXVrvNsyu/view?usp=sharing">The Concordia Contest: Advancing the Cooperative Intelligence of Language Model Agents</a></h3>
-                <p><strong>Authors:</strong> <strong>Chandler Smith</strong>, Rakshit S. Trivedi, Jesse Clifton, Lewis Hammond, Akbir Khan, Marwa Abdulhai, Alexander Sasha Vezhnevets, John P. Agapiou, Edgar A. Duéñez-Guzmán, Jayd Matyas, Danny Karmon, Oliver Slumbers, Minsuk Chang, Dylan Hadfield-Menell, Natasha Jaques, Tim Baarslag, Joel Z. Leibo<br>
-                <strong>Conference:</strong> NeurIPS 2024 Competition Track<br>
-                <strong>Contest Hosting Site:</strong> <a href="https://www.codabench.org/competitions/3888/">Link</a></p>
-                <p>Building on the success of the Melting Pot contest at NeurIPS 2023, which challenged participants to develop multi-agent reinforcement learning agents capable of cooperation in groups, we are excited to propose a new contest centered on cooperation between language model agents in intricate, text-mediated environments. Our goal is to advance research on the cooperative intelligence of such LM agents. Of particular interest are the agents capable of using natural language to effectively cooperate with each other in complex environments, even in the face of challenges such as competing interests, differing values, and potential miscommunication.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_6.png" alt="BetterBench" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://betterbench.stanford.edu/">BetterBench: Assessing AI Benchmarks, Uncovering Issues, and Establishing Best Practices</a></h3>
-                <p><strong>Authors:</strong> Anka Reuel, Amelia Hardy, <strong>Chandler Smith</strong>, Max Lamparth, Mykel J. Kochenderfer</p>
-                <strong>Conference:</strong> NeurIPS 2024 Track Datasets and Benchmarks <strong>Spotlight</strong>
-                <p>AI models are increasingly prevalent in high-stakes environments, necessitating thorough assessment of their capabilities and risks. Benchmarks are popular for measuring these attributes and for comparing model performance, tracking progress, and identifying weaknesses in foundation and non-foundation models.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_2.png" alt="Escalation Risks from Language Models" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://dl.acm.org/doi/pdf/10.1145/3630106.3658942">Escalation Risks from Language Models in Military and Diplomatic Decision-Making</a></h3>
-                <p><strong>Authors:</strong> Juan-Pablo Rivera, Gabriel Mukobi, Anka Reuel, Max Lamparth, <strong>Chandler Smith</strong>, Jacquelyn Schneider<br>
-                <strong>Conference:</strong> FAccT 2024: Proceedings of the 2024 ACM Conference on Fairness, Accountability, and Transparency</p>
-                <p>Our project investigates the potential risks and implications of integrating multiple autonomous AI agents within national defense strategies, exploring whether these agents tend to escalate or deescalate conflict situations. Through a simulation that models real-world international relations scenarios, our preliminary results indicate that AI models exhibit a tendency to escalate conflicts, posing a significant threat to maintaining peace and preventing uncontrollable military confrontations.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_3.png" alt="Evaluating Language Model Character Traits" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://arxiv.org/abs/2410.04272">Evaluating Language Model Character Traits</a></h3>
-                <p><strong>Authors:</strong> Francis Rhys Ward, Zejia Yang, Alex Jackson, Randy Brown, <strong>Chandler Smith</strong>, Grace Beaney Colverd, Louis Alexander Thomson, Raymond Douglas, Patrik Bartak, Andrew Rowan<br>
-                <strong>Conference:</strong> Empirical Methods in Natural Language Processing (EMNLP) findings, 2024</p>
-                <p>Language models (LMs) can exhibit human-like behaviour, but it is unclear how to describe this behaviour without undue anthropomorphism. We formalise a behaviourist view of LM character traits: qualities such as truthfulness, sycophancy, and coherent beliefs and intentions, which may manifest as consistent patterns of behaviour.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_5.png" alt="Secret Collusion" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://www.lesswrong.com/posts/smMdYezaC8vuiLjCf/secret-collusion-will-we-know-when-to-unplug-ai">Secret Collusion: Will We Know When to Unplug AI?</a></h3>
-                <p><strong>Authors:</strong> Christian Schroeder de Witt, Mikhail Baranchuk, Lewis Hammond, <strong>Chandler Smith</strong>, Sumeet Motwani</p>
-                <p>We introduce the first comprehensive theoretical framework for understanding and mitigating secret collusion among advanced AI agents, along with CASE, a novel model evaluation framework.</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_7.png" alt="Conflict and Cooperation" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://docs.google.com/presentation/d/1bIdWrTOHJSItNCEAztCE-62pqpR-LN70xCMAtTzRnj0/edit#slide=id.p">Conflict and Cooperation: An Exploration of Safety Concerns in Multi-Agent Systems</a></h3>
-                <p><strong>Author:</strong> <strong>Chandler Smith</strong><br>
-                <strong>Master's Thesis Defense Presentation</strong></p>
-                <p>This work offers a broad examination of AI safety, delving into the technical foundations, algorithms, and pertinent failure modes associated with Multi-Agent Reinforcement Learning (MARL) and Cooperative Artificial Intelligence (AI).</p>
-            </div>
-        </div>
-        <div class="research-item">
-            <img src="images/research_8.png" alt="The State of AI in Maine" class="research-image">
-            <div class="research-content">
-                <h3><a href="https://ai.northeastern.edu/saim23">The State of AI in Maine</a></h3>
-                <p><strong>Authors:</strong> Anna Fiorentino, Olivia Saucier, Tyler Lynch, <strong>Chandler Smith</strong></p>
-                <p>Findings were drawn from 50 interviews conducted between July and December 2022. Interviewees were selected based on research by the reporting team and referrals from The State of AI in Maine Advisory Committee and many others. This report is a companion piece to The State of AI in Maine event, scheduled for Jan. 27, 2023. The report and event were created in parallel, with guidance from The State of Maine Advisory Committee and jointly funded by the Institute for Experiential AI and the Roux Institute at Northeastern University.</p>
-            </div>
-        </div>
-    </div>
-    <div class="ongoing-projects">
-        <h2>Ongoing Projects</h2>
-        <ul>
-            <li><strong><a href="https://docs.google.com/document/d/1r4wEhAs3JIeEitV3PD0UD8n6R3YBOIYxKUiYRwTlAHA/edit?usp=sharing">Evaluation for Cooperative AI: Assessing Punitiveness in Multi-Agent Environments</a></strong></li>
-            <li><strong>Eliciting Emergent Steganography</strong></li>
-            <li><strong>Minimax Regret Algorithms as a performant alternative to utility maximization algorithms</strong></li>
-            <li><strong>Error-Correcting AI Generated Steganography</strong></li>
-            <li><strong>Quantifying Misalignment in Multi-Agent Systems</strong></li>
-            <li><strong>AI Mediated Debate</strong></li>
-        </ul>
-    </div>
+    <nav>
+        <a class="site-name" href="./">chandlersmith.me</a>
+        <a class="active" href="./" aria-current="page">about</a>
+        <a href="research.html">research</a>
+        <a href="assets/chandler-smith-resume.pdf">resume</a>
+        <a href="https://scholar.google.com/citations?user=MW32guUAAAAJ&amp;hl=en">scholar</a>
+        <a href="https://github.com/chansmi">github</a>
+    </nav>
+
+    <img class="portrait" src="images/portrait.jpg" alt="Portrait of Chandler Smith" width="220" height="215">
+    <h1>Chandler Smith</h1>
+    <p class="role">DPhil student, University of Oxford &middot; Student researcher, Google DeepMind</p>
+
+    <p>I am a DPhil student in Engineering Science at the University of Oxford, advised by <a href="https://www.robots.ox.ac.uk/~phst/">Philip Torr</a> and <a href="https://www.schroederdewitt.com/">Christian Schroeder de Witt</a> in the <a href="https://torrvision.com/">Torr Vision Group</a>, and a <a href="https://www.cooperativeai.com/post/announcing-the-2025-cooperative-ai-phd-scholars">Cooperative AI PhD Scholar</a>. I am currently a student researcher at <a href="https://deepmind.google/">Google DeepMind</a> on the Discovery team. I am also a research analyst at the <a href="https://www.cooperativeai.com/">Cooperative AI Foundation</a> and a research affiliate at the <a href="https://aigi.ox.ac.uk/">Oxford Martin AI Governance Institute</a>.</p>
+
+    <p>As AI systems become more autonomous and interconnected, they introduce risks that extend beyond the safety of any individual system. My research focuses on understanding, measuring, and mitigating these risks: multi-agent security, cooperative AI, AI control, and the evaluation of agentic systems.</p>
+
+    <p>Before Oxford, I was a research scholar at <a href="https://www.matsprogram.org/">MATS</a>, a technical architect fellow at <a href="https://www.iqt.org/">In-Q-Tel</a> working on AI and national security, and an engineer at <a href="https://www.dimagi.com/">Dimagi</a> working on global health. I hold an M.S. in Computer Science from Northeastern University.</p>
+
+    <h2>News</h2>
+    <ul class="news">
+        <li><span class="date">2026</span><span>New preprint: <a href="https://arxiv.org/abs/2603.11051">OpenSanctions Pairs: Large-Scale Entity Matching with LLMs</a>.</span></li>
+        <li><span class="date">2026</span><span>Joined Google DeepMind as a student researcher on the Discovery team.</span></li>
+        <li><span class="date">2025</span><span><a href="https://arxiv.org/abs/2512.03318">Evaluating Generalization Capabilities of LLM-Based Agents</a> accepted at NeurIPS 2025 Datasets &amp; Benchmarks.</span></li>
+        <li><span class="date">2025</span><span><a href="https://arxiv.org/abs/2412.01928">MALT</a> accepted at COLM 2025.</span></li>
+        <li><span class="date">2025</span><span>Started my DPhil at the University of Oxford as a Cooperative AI PhD Scholar.</span></li>
+        <li><span class="date">2025</span><span>New preprint: <a href="https://arxiv.org/abs/2505.02077">Open Challenges in Multi-Agent Security</a>.</span></li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p class="contact"><a href="mailto:smith.18.chandler@gmail.com">Email</a> &middot; <a href="https://github.com/chansmi">GitHub</a> &middot; <a href="https://scholar.google.com/citations?user=MW32guUAAAAJ&amp;hl=en">Google Scholar</a> &middot; <a href="https://twitter.com/ChandlerDSmith">Twitter</a> &middot; <a href="https://www.linkedin.com/in/chandlerdsmith/">LinkedIn</a></p>
+
+    <footer>&copy; Chandler Smith</footer>
 </body>
 </html>
